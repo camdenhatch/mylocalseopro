@@ -1,0 +1,25 @@
+.title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(58, 112, 26);
+    margin: auto;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    top: 0px;
+}
+
+.message {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.copyright {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(58, 112, 26);
+    font-weight: bold;
+    margin: auto;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    bottom: 15px;
+}
