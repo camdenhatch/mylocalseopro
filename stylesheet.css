@@ -1,25 +1,91 @@
-.title {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(58, 112, 26);
-    margin: auto;
-    width: 100%;
-    position: fixed;
-    text-align: center;
-    top: 0px;
+/* Color stuff */
+
+:root{
+    --sixty: #F5EFDF;
+    --thirty: #111013;
+    --ten: #8CC92D;
 }
 
-.message {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
+.primaryColor{
+    background-color: var(--sixty);
 }
 
-.copyright {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(58, 112, 26);
-    font-weight: bold;
-    margin: auto;
-    width: 100%;
-    position: fixed;
-    text-align: center;
-    bottom: 15px;
+.secondaryColor{
+    background-color: var(--thirty);
+}
+
+.accentColor {
+    background-color: var(--ten);
+}
+
+.primaryText{
+    color: var(--sixty);
+}
+
+.secondaryText {
+    color: var(--thirty);
+}
+
+.accentText {
+    color: var(--ten);
+}
+
+.primaryBorder {
+    border-color: var(--sixty);
+    border-width: 2px;
+    border-radius: 7px;
+}
+
+.secondaryBorder {
+    border-color: var(--thirty);
+    border-width: 2px;
+    border-radius: 7px;
+}
+
+.accentBorder {
+    border-color: var(--ten);
+    border-width: 2px;
+    border-radius: 7px;
+}
+
+.actionButton {
+    background-image: linear-gradient(to right, green, var(--ten));
+    border-color: var(--sixty);
+    border-width: 2px;
+    border-radius: 10px;
+    color: var(--sixty);
+}
+
+.actionButton:hover {
+    background-image: linear-gradient(to right, green, var(--ten));
+    border-color: var(--thirty);
+    border-width: 2px;
+    border-radius: 10px;
+    color: var(--thirty);
+}
+
+/* navbar shrink stuff given structure by a response to this
+prompt in chat GPT: 
+"make the navbar in the following code shrink when scrolling down 50px please:"
+and:
+"how to make a smoother transition between the non shrunk navbar and the shunk one"*/
+
+.navbar {
+    transition: padding 0.5s ease-in-out;
+    /* Smooth transition for padding changes */
+}
+
+.navbar-brand img {
+    transition: height 0.5s ease-in-out;
+    /* Smooth transition for logo size changes */
+}
+
+.navbar.shrink {
+    padding: 5px 0;
+    /* Reduced padding when navbar shrinks */
+}
+
+.navbar.shrink .navbar-brand img {
+    height: 50px;
+    /* Adjusted logo size when navbar shrinks */
 }

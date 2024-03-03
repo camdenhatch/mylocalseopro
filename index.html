@@ -4,28 +4,275 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Local SEO Pro</title>
+    <title>Local SEO Pro</title>
+    <link rel="icon" type="image/x-icon" href="hatchseoabreviated.svg">
+
+    <!-- Bootstrap stuff -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="stylesheet.css">
+
+    <!-- Google font stuff -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- font awesome stuff -->
+    <script src="https://kit.fontawesome.com/4b76fa5d68.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body style="font-family: 'Noto Sans HK', sans-serif;">
+    <!-- <header class="primaryColor">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="hatchseologo.png" alt="Hatch SEO logo" height="90"
+                        class="d-inline-block align-text-center"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#info">Info</a>
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header> -->
+
+
+    <!-- This section is a section of code modified by chat GPT based on the last section of commented out code
+    I wanted to move the navbar and the collapsible navbar to the right of the header and chat showed me how -->
+
+    <!-- Here's the prompt i gave chat GPT: 
+    "I'd like you to modify the snippet I gave you to make the navbar have the nav links all the way to the right 
+    of the page, including when the page is collapsed using bootstrap" -->
     <header>
-        <div class="title">
-            <h1>My Local SEO Pro</h1>
-        </div>
+        <nav class="navbar navbar-expand-lg fixed-top primaryColor" id="navbarLogo">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="hatchseologo.svg" alt="Hatch SEO logo" height="140"
+                        class="d-inline-block align-text-center">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#info">Info</a>
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <body>
-        <div class="message">
-            <br><br><br><br><br><br><br><br><br><br>
-            <h3>Page under construction . . . thanks for your patience</h3>
-        </div>
-    </body>
-    <footer>
-        <div class="copyright">
-            &copy; Camden Hatch 2024 | My Local SEO Pro
-        </div>
-    </footer>
-</body>
+    <section class="primaryColor">
+        <br><br><br><br><br><br><br><br>
+        <section id="#">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col text-center p-3">
+                        <h1 class="display-1"><strong>Local SEO.</strong></h1>
+                        <h1 class="display-1"><strong>Done Right.</strong></h1>
+                        <button type="button" class="btn actionButton btn-lg my-4">Start Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-</html>
+        <br><br><br><br>
+        <!-- SEO service tag lines and attention grabbers like why get SEO?
+    some taglines or whatever -->
+        <section id="info">
+            <br><br><br>
+            <div class="container-fluid text-center">
+                <div class="row">
+                    <div class="col">
+                        <h2>Why SEO?</h2>
+                    </div>
+                </div>
+                <div class="row align-items-center p-5">
+                    <div class="col-sm-6 col-md-8 col-lg-9">
+                        My name is Camden Hatch. I'm a freelance local SEO expert who has worked on 20+ local SEO campaigns, 
+                        built 110+ backlinks, and boosted Google search rankings for local businesses just like yours. Search 
+                        Engine Optimization is the most cost-effective way to increase revenue for almost any business - 
+                        especially for local businesses. Of any marketing type I have worked on, including Facebook ads, 
+                        Google ads, social media marketing, and YouTube, SEO provides the most economical longterm results 
+                        for driving traffic.
+                        <br><br>
+                        This means that if it is taken seriously and stuck with, a quality SEO campaign can drive permanent 
+                        organic traffic to your website for as long as you want, with very little further investment after 
+                        the first 6-12 months, and a recurring traffic stream afterwards. This means two things: 1 of 
+                        course being that you need to be patient with SEO, it's a process and 6-12 months before seeing 
+                        a recurring return on investment isn't for everyone. And 2, you also only have to use that patience with 
+                        me for 6-12 months and then there's normally no reason to keep using me because you're already 
+                        ranking at the top of Google in your area for many of the keywords you want taken care of.
+                        <br><br>
+                        Have questions about how I can help your business rank at the top of Google? Book a free, live audit
+                        of your website with me. No strings attached, I just love this stuff and would love to help you out.
+                        <br><br>
+                        <button type="button" class="btn actionButton btn-lg my-4">Book a free SEO audit now</button>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card accentBorder shadow" style="width: 80%">
+                            <img src="headshot.jpg" class="card-img-top"
+                                alt="Image of Camden Hatch, founder of Hatch SEO">
+                            <div class="card-body">
+                                <p class="card-text">Camden Hatch, Founder and CEO of Hatch SEO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Productized SEO services, basically what I offer will go here, will include 
+    images and selector tools probably, might add another section with some buy now services -->
+        <section id="pricing">
+            <br><br>
+            <div class="container-fluid">
+                <div class="row p-5 text-center">
+                    <div class="col">
+                        <h2>Full-Service SEO Campaigns</h2>
+                    </div>
+                </div>
+                <div class="row p-3">
+                    <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+                        <div class="card accentBorder shadow" style="width: 100%">
+                            <h5 class="card-header p-3 text-center secondaryColor primaryText">Technical Audits</h5>
+                            <div class="card-body">
+                                <p class="card-text">Kickstart a truly effective search engine optimization strategy
+                                    with technical SEO. If Google detects broken parts of your website, it hinders your
+                                    rankability. I conduct a technical audit for your website to help you and I 
+                                    understand where to begin our website optimization and ranking process.
+                                <p>We fix:</p>
+                                <ul>
+                                    <li>Indexability</li>
+                                    <li>404 Errors</li>
+                                    <li>Broken backlinks</li>
+                                    <li>Website speed issues</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+                        <div class="card accentBorder shadow" style="width: 100%">
+                            <h5 class="card-header p-3 text-center secondaryColor primaryText">Keyword Research</h5>
+                            <div class="card-body">
+                                <p class="card-text">This is the foundation of a personalized and effective SEO
+                                    strategy, but one of the most challenging. It involves knowing the exact list of
+                                    keywords (or search queries) your audience actually searches for, and implementing 
+                                    the advantageous ones into your website in the correct order and matching the 
+                                    correct intent.
+                                <p>You get:</p>
+                                <ul>
+                                    <li>A customized list of keywords to get you ranking</li>
+                                    <li>Keyword implementation plan</li>
+                                    <li>Strategic keyword intent matching</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+                        <div class="card accentBorder shadow" style="width: 100%">
+                            <h5 class="card-header p-3 text-center secondaryColor primaryText">Page Management</h5>
+                            <div class="card-body">
+                                <p class="card-text">This is arguably one of the simplest things I do to rank you: 
+                                    Page building. I build out seperate pages for each keyword. One of the huge
+                                    benefits of doing this (besides avoiding flagging Google for keyword stuffing) is 
+                                    better website organization and having more specific and exact fulfilment of search 
+                                    intent by your intended audience.
+                                <p>You get:</p>
+                                <ul>
+                                    <li>Dedicated keyword and location-relavant pages</li>
+                                    <li>Meta tag and header matching</li>
+                                    <li>Irrelevant page removal</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+                        <div class="card accentBorder shadow" style="width: 100%">
+                            <h5 class="card-header p-3 text-center secondaryColor primaryText">Backlink Building</h5>
+                            <div class="card-body">
+                                <p class="card-text">Nothing moves the traffic needle as much as high quality backlinks.
+                                    It works like this: Would you rather buy from a store that has endorsements from other
+                                    reputable stores, or from one that has none? It's been shown again and again that 
+                                    having referring links from appropriate websites tells Google that you have a legitimate
+                                    and attractive website, likewise growing your rankings.
+                                <p>You get:</p>
+                                <ul>
+                                    <li>2 quality backlinks per month</li>
+                                </ul>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle actionButton" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        More backlink options
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">+1-2 backlinks $100 each</a></li>
+                                        <li><a class="dropdown-item" href="#">+3-5 backlinks $90 each</a></li>
+                                        <li><a class="dropdown-item" href="#">+6-8 backlinks $80 each</a></li>
+                                    </ul>
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row p-3">
+                    <div class="col">
+                        <div class="card accentBorder shadow secondaryColor primaryText" style="width: 100%">
+                            <h5 class="card-header p-3 text-center">All of this for $500 a month</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact and appointment booking info -->
+        <section id="contact">
+            <br><br><br>
+            <div class="container-fluid">
+                <div class="row p-5 text-center">
+                    <div class="col">
+                        <h2>Contact Me</h2>
+                    </div>
+                </div>
+                <div class="row align-items-center p-5">
+                    <div class="col text-center">
+                        <i class="fa-brands fa-square-x-twitter fa-2xl"></i>
+                        <i class="fa-solid fa-envelope fa-2xl"></i>
+                        <i class="fa-brands fa-linkedin fa-2xl"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<br><br>
+
+        <footer>
+            <div class="container text-center">
+                <div class="col p-3">&copy; Camden Hatch 2024</div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Java reference learned by asking chat GPT
+    "how to refernce javascript file in html document"-->
+
+    <script src="stylesheet.js"></script>
+
+</body>
